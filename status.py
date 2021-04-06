@@ -69,6 +69,6 @@ instance (bool) – marks the match as a game session with a specific beginning 
 Return type
 pypresence.Response
 """
-RPC.set_activity(buttons=buttons,state=desc)
+RPC.set_activity(buttons=buttons,state=desc,join="https://github.com/cat-policlot/discord-presence")
 while True:
 	time.sleep(15)
