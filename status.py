@@ -24,6 +24,7 @@ if "BUTTONS" in config:
 		buttons_tmp["label"] = key
 		buttons_tmp["url"] = config["BUTTONS"][key]
 		buttons.append(buttons_tmp)
+		buttons_tmp = dict()
 	print(buttons)
 else:
 	buttons = None
