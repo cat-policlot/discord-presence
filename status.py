@@ -25,12 +25,12 @@ if "BUTTONS" in config:
 		buttons_tmp["url"] = config["BUTTONS"][key]
 		buttons.append(buttons_tmp)
 		buttons_tmp = dict()
-	print(buttons)
 else:
 	buttons = None
 if "DESC" in config:
 	desc = list(config["DESC"].keys())[0]
-
+#реклама
+#buttons.append({"label":"get discord-presence","url":"https://github.com/cat-policlot/discord-presence"})
 RPC.start()
 """
 Parameters
@@ -69,6 +69,6 @@ instance (bool) – marks the match as a game session with a specific beginning 
 Return type
 pypresence.Response
 """
-RPC.set_activity(buttons=buttons,state=desc,join="https://github.com/cat-policlot/discord-presence")
+RPC.set_activity(buttons=buttons,state=desc)
 while True:
 	time.sleep(15)
